@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>גיימר שופ - הבית לגיימרים</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+    }
+    header {
+      background: linear-gradient(90deg, #6e00ff, #00c3ff);
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 2rem;
+      background: url('https://images.unsplash.com/photo-1587202372775-e17b6f3ab542') no-repeat center/cover;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      background: rgba(0,0,0,0.6);
+      display: inline-block;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .product {
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .product h3 {
+      color: #00c3ff;
+    }
+    .product button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #00c3ff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .product button:hover {
+      background-color: #00a3dd;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎮 גיימר שופ - כל מה שחדר גיימר צריך!</h1>
+  </header>
+  <nav>
+    <a href="#">בית</a>
+    <a href="#">מוצרים</a>
+    <a href="#">בלוג</a>
+    <a href="#">צור קשר</a>
+    <a href="#">🛒 סל קניות</a>
+  </nav>
+  <section class="hero">
+    <h2>גאדג'טים, תאורה ומוצרי סלולר שיקפיצו את החדר שלך</h2>
+  </section>
+  <section class="products">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1606813909027-9b4c4f9fdd56" alt="מנורת לד גיימינג">
+      <h3>מנורת לד ניאון</h3>
+      <p>הוסיפו אווירה מושלמת עם תאורת ניאון לחדר.</p>
+      <button onclick="alert('מנורת לד נוספה לסל!')">🛒 הוסף לסל</button>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1616628182506-4e3c0edc3d4e" alt="סט מקלדת ועכבר">
+      <h3>סט מקלדת + עכבר RGB</h3>
+      <p>ציוד חובה לכל גיימר מקצועי.</p>
+      <button onclick="alert('סט מקלדת ועכבר נוספו לסל!')">🛒 הוסף לסל</button>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1611601181466-1e36b5fcd7b6" alt="מעמד לנייד שולחני">
+      <h3>מעמד שולחני לנייד</h3>
+      <p>שמור על הסמארטפון שלך בהישג יד ובסטייל.</p>
+      <button onclick="alert('המעמד נוסף לסל!')">🛒 הוסף לסל</button>
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 גיימר שופ - כל הזכויות שמורות</p>
+  </footer>
+</body>
+</html>
